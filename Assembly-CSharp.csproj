@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{004FDF02-340E-9037-48E4-6100B6309B00}</ProjectGuid>
+	<ProjectGuid>{D696B5F7-16A6-47FB-E107-91522F0EAAD5}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -94,6 +94,12 @@
      <Compile Include="Assets\SpaceInvaders\Scripts\DestroyByContact.cs" />
      <Compile Include="Assets\SpaceInvaders\Scripts\Mover.cs" />
      <Compile Include="Assets\SpaceInvaders\Scripts\PlayerController1.cs" />
+     <Compile Include="Assets\Tetris\Scripts\ExitMario_Tetris.cs" />
+     <Compile Include="Assets\Tetris\Scripts\Game.cs" />
+     <Compile Include="Assets\Tetris\Scripts\MarioMovement.cs" />
+     <Compile Include="Assets\Tetris\Scripts\MenuScript.cs" />
+     <Compile Include="Assets\Tetris\Scripts\Tetramino.cs" />
+     <Compile Include="Assets\Tetris\Scripts\TetrminoHit.cs" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
@@ -105,11 +111,17 @@
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
@@ -120,7 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{30EE67FF-6018-9668-B6D5-F608B4257DE4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{3F3C62D2-050E-6316-3B5B-E2721730D825}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
