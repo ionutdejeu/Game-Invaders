@@ -45,13 +45,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameController.cs" />
-     <Compile Include="Assets\Levels.cs" />
      <Compile Include="Assets\Mario\GumbaCharacter\GumbaHit.cs" />
      <Compile Include="Assets\Mario\GumbaCharacter\GumbaMovement.cs" />
      <Compile Include="Assets\Mario\Scripts\Exit.cs" />
      <Compile Include="Assets\Mario\Scripts\Parallaxing.cs" />
      <Compile Include="Assets\Mario\Scripts\Tiling.cs" />
+     <Compile Include="Assets\PacMan\PacManCharacter\Scripts\PacMan2DUserControl.cs" />
+     <Compile Include="Assets\PacMan\PacManCharacter\Scripts\PacManCharacter2D.cs" />
      <Compile Include="Assets\PacMan\Scripts\AI.cs" />
      <Compile Include="Assets\PacMan\Scripts\Energizer.cs" />
      <Compile Include="Assets\PacMan\Scripts\GUI Scripts\GameGUINavigation.cs" />
@@ -76,20 +76,12 @@
      <Compile Include="Assets\Pong\PlayerControls.cs" />
      <Compile Include="Assets\Pong\PlayerControlsHorizontal.cs" />
      <Compile Include="Assets\Pong\PongGameManager.cs" />
+     <Compile Include="Assets\RocketLeague\Levels.cs" />
      <Compile Include="Assets\RocketLeague\jump.cs" />
      <Compile Include="Assets\RocketLeague\scripts\CollisionCube.cs" />
      <Compile Include="Assets\RocketLeague\scripts\CubeColor.cs" />
      <Compile Include="Assets\RocketLeague\scripts\Score.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_BGScroller.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_DestroyByBoundary.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_DestroyByContact.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_DestroyByTime.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_EvasiveManeuver.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_GameController.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_Mover.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_PlayerController.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_RandomRotator.cs" />
-     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_WeaponController.cs" />
+     <Compile Include="Assets\SpaceInvaders\GameController.cs" />
      <Compile Include="Assets\SpaceInvaders\Scripts\DestroyByBoundary.cs" />
      <Compile Include="Assets\SpaceInvaders\Scripts\DestroyByContact.cs" />
      <Compile Include="Assets\SpaceInvaders\Scripts\Mover.cs" />
@@ -111,17 +103,11 @@
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
