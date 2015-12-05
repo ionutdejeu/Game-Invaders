@@ -29,7 +29,7 @@ public class Tetramino : MonoBehaviour {
             }
             else
             {
-                transform.position += new Vector3(-1, 0, 1);
+                transform.position += new Vector3(-1, 0, 0);
             }
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
