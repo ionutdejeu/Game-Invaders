@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Boundary
   - Enemy
+  - Cube
+  - _GM
   layers:
   - Default
   - TransparentFX

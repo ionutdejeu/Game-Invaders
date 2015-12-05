@@ -3,14 +3,10 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class CollisionCube : MonoBehaviour {
-    public static int score = 0;
-    public static int ScoreCubes = 0;
-    public static int ScoreSpheres = 0;
-    public static bool visitedPong = false;
+
     public bool esteCub;
     public bool esteSfera;
-    public Text textScoreCubes;
-    public Text textScoreSpheres;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -19,41 +15,19 @@ public class CollisionCube : MonoBehaviour {
     {
         if (theCollision.gameObject.name == "Car")
         {
-            Debug.Log("Picked up cube.");
+           
             GameObject.Destroy(this.gameObject);
-            score++;
+           
             if (esteCub)
             {
-                ScoreCubes++;
-                textScoreCubes.text = "Cubes: " + ScoreCubes;
+                RocketLeagueGameManager.Manager.AddScore(1, 0);
             }
             if (esteSfera)
             {
-                ScoreSpheres++;
-                textScoreSpheres.text = "Spheres: " + ScoreSpheres;
+                RocketLeagueGameManager.Manager.AddScore(0, 1);
             }
         }
-        CheckScore();
-
-    }
-
-    // Update is called once per frame
-    void Update () {
         
-	
-	}
 
-    public void CheckScore()
-    {
-        if (ScoreCubes > 1 && ScoreSpheres >1 && visitedPong==false)
-        {
-            visitedPong = true;
-            // go to the next level 
-            Application.LoadLevel(1);
-        }
-        if (ScoreCubes > 50 && ScoreSpheres > 50)
-        {
-            Application.LoadLevel("Pong/PacPong");
-        }
     }
 }
