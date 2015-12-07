@@ -6,4 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Pong/PacPong.unity
+    path: Assets/Mario/Tutorial.unity
+  - enabled: 1
+    path: Assets/Mario/Tutorial.unity
+  - enabled: 1
+    path: Assets/RocketLeague/save.unity

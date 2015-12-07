@@ -80,9 +80,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mario\GumbaCharacter\GumbaHit.cs" />
+    <Compile Include="Assets\Mario\GumbaCharacter\GumbaController.cs" />
     <Compile Include="Assets\Mario\GumbaCharacter\GumbaMovement.cs" />
     <Compile Include="Assets\Mario\Scripts\Exit.cs" />
+    <Compile Include="Assets\Mario\Scripts\MarioGameManager.cs" />
+    <Compile Include="Assets\Mario\Scripts\MarioScoreManager.cs" />
     <Compile Include="Assets\Mario\Scripts\Parallaxing.cs" />
     <Compile Include="Assets\Mario\Scripts\Tiling.cs" />
     <Compile Include="Assets\PacMan\PacManCharacter\Scripts\PacMan2DUserControl.cs" />

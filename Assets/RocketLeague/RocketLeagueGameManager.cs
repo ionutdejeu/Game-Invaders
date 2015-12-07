@@ -42,7 +42,9 @@ public class RocketLeagueGameManager : MonoBehaviour {
             GameLevel =1
         }
     };
-    
+
+    public int HomeGameLevel = 2;
+
     public int ScoreCubes = 0;
     public int ScoreSpheres = 0;
     
@@ -66,8 +68,16 @@ public class RocketLeagueGameManager : MonoBehaviour {
     private Animator countdowownAnimator;
     private float nextAnimationTime;
     private float nextTimeForCountdowAnimation;
-    
+    private int levelToLoad;
 
+    void Awake()
+    {
+        //this.scores = RocketLeagueGameManager.Manager.scores;
+        //ScoreCubes = RocketLeagueGameManager.Manager.ScoreCubes;
+        //ScoreSpheres = RocketLeagueGameManager.Manager.ScoreSpheres;
+        //this.RefreshScore();
+        
+    }
 	void Start () {
        
         CurrentState = GameState.Waiting;
@@ -89,6 +99,7 @@ public class RocketLeagueGameManager : MonoBehaviour {
                 nextTimeForCountdowAnimation = 4f;
                 endLevelAudio.Play();
                 endLevel = true;
+                levelToLoad = score.GameLevel;
             }
         }
         if(endLevel == false)
@@ -106,17 +117,19 @@ public class RocketLeagueGameManager : MonoBehaviour {
         
 
     }
-    
 
-   
+
+    public void RefreshScore()
+    {
+        textScoreCubes.text = "Cubes: " + ScoreCubes;
+        textScoreSpheres.text = "Spheres: " + ScoreSpheres;
+    }
     public void AddScore(int pScoreSpheres = 0, int pScoreCubes = 0)
     {
-        Debug.Log("Score!!!");
-        ScoreCubes += pScoreCubes;
-        textScoreCubes.text = "Cubes: " + ScoreCubes;
-        ScoreSpheres += pScoreSpheres;
-        textScoreSpheres.text = "Spheres: " + ScoreSpheres;
         
+        ScoreCubes += pScoreCubes;
+        ScoreSpheres += pScoreSpheres;
+        this.RefreshScore();        
         this.CheckNextLelve();
     }
 
@@ -132,7 +145,7 @@ public class RocketLeagueGameManager : MonoBehaviour {
                 // load the next level 
                 CurrentState = GameState.Waiting;
                 NextGameUI.SetActive(false);
-                
+                Application.LoadLevel(levelToLoad);
             }
         }
     }

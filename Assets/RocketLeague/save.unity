@@ -335,6 +335,7 @@ MonoBehaviour:
     GameLevelName: 
     GameLevel: 1
     isVisited: 0
+  HomeGameLevel: 2
   ScoreCubes: 2
   ScoreSpheres: 2
   CurrentState: 0
@@ -500,7 +501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1157791358
 RectTransform:
   m_ObjectHideFlags: 0

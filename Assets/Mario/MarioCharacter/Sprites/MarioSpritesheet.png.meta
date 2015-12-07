@@ -1,13 +1,13 @@
 fileFormatVersion: 2
 guid: 1157cf73207ba95408fece982be253e3
-timeCreated: 1446927227
+timeCreated: 1449445926
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MarioSpritesheet_0
+    21300000: Mario_Shroom_1
     21300002: Gumba_Walk_1
     21300004: MarioSpritesheet_2
-    21300006: MarioSpritesheet_3
+    21300006: Mario_Coint_1
     21300008: MarioSpritesheet_4
     21300010: MarioSpritesheet_5
     21300012: MarioSpritesheet_6
@@ -153,6 +153,10 @@ TextureImporter:
     21300292: MarioSpritesheet_136
     21300294: Mario_Die
     21300296: Gumb_Wakl_3
+    21300298: Mario_Coin_2
+    21300300: Mario_Coin_3
+    21300302: Mario_Shroom_2
+    21300304: MarioSpritesheet_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -199,13 +203,13 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: MarioSpritesheet_0
+    - name: Mario_Shroom_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 630
-        width: 139
-        height: 93
+        x: 7
+        y: 677
+        width: 45
+        height: 45
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,13 +233,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MarioSpritesheet_3
+    - name: Mario_Coint_1
       rect:
         serializedVersion: 2
-        x: 357
-        y: 685
-        width: 70
-        height: 33
+        x: 358
+        y: 686
+        width: 22
+        height: 31
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1683,6 +1687,46 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 250
+        y: 677
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mario_Coin_2
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 686
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mario_Coin_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 686
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mario_Shroom_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 677
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MarioSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 99
         y: 677
         width: 45
         height: 45
