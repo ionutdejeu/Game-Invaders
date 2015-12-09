@@ -7,14 +7,23 @@ public class Exit : MonoBehaviour {
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-    void OnCollisionEnter2D(Collision2D collision)
+    // Update is called once per frame
+    void Update()
     {
-        Application.LoadLevel("Scena");
+
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        switch (collider.gameObject.name)
+        {
+            case "Player":
+            CoinController.coinCount++;
+                Destroy(this.gameObject);
+
+            break;
+        }
+
     }
 }

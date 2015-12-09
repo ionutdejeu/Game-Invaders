@@ -852,7 +852,7 @@ Transform:
   m_Children:
   - {fileID: 1094662754}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
 --- !u!114 &185757885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1272,7 +1272,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
 --- !u!1 &293071467
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,7 +2038,7 @@ Transform:
   - {fileID: 1508896229}
   - {fileID: 191267251}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
 --- !u!61 &648214821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2391,6 +2391,98 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300066, guid: 1157cf73207ba95408fece982be253e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &740395727
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.70527935
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .691549063
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108660, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_Name
+      value: Mario_Coin (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &771797642
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.18725014
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .574449897
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 108660, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_Name
+      value: Mario_Coin (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &777294995
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,9 +2603,8 @@ Transform:
   - {fileID: 1251308289}
   - {fileID: 1673767256}
   - {fileID: 2108906014}
-  - {fileID: 1964934045}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
 --- !u!1 &790638232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,7 +2714,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 12
 --- !u!114 &808035133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3598,7 +3689,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
 --- !u!114 &1226508122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4152,7 +4243,7 @@ Transform:
   - {fileID: 616625783}
   - {fileID: 1512660358}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
 --- !u!1 &1444230027
 GameObject:
   m_ObjectHideFlags: 0
@@ -4184,7 +4275,7 @@ RectTransform:
   - {fileID: 694090399}
   - {fileID: 1834187606}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4366,6 +4457,52 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300066, guid: 1157cf73207ba95408fece982be253e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1456691422
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.46049118
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .622394204
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 108660, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+      propertyPath: m_Name
+      value: Mario_Coin (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1466262025
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,7 +5220,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.79999995, y: -.608012319, z: 37.0999985}
   m_LocalScale: {x: 8.24355793, y: 8.24356079, z: 8.24356079}
-  m_Children: []
+  m_Children:
+  - {fileID: 1964934045}
   m_Father: {fileID: 785205424}
   m_RootOrder: 8
 --- !u!1001 &1722935363
@@ -5123,7 +5261,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408336, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 240fb64eeef88d2468f905f913fe46a6, type: 2}
@@ -5891,7 +6029,7 @@ Transform:
   m_Children:
   - {fileID: 2053173237}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
 --- !u!114 &1869240972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6198,11 +6336,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1964934044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.6599998, y: -.608012319, z: 37.0999985}
-  m_LocalScale: {x: 8.24355793, y: 8.24356079, z: 8.24356079}
+  m_LocalPosition: {x: 6.48506355, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 785205424}
-  m_RootOrder: 10
+  m_Father: {fileID: 1673767256}
+  m_RootOrder: 0
 --- !u!212 &1964934046
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6619,7 +6757,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2053173235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6544bee7566c0464ebaf0a38829db174, type: 3}
+  m_Script: {fileID: 11500000, guid: 7dc1a80f28c189f4b81d5016c720a9c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2060623563
