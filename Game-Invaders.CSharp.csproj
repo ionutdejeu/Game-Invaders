@@ -51,17 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -84,7 +78,7 @@
     <Compile Include="Assets\Mario\GumbaCharacter\GumbaMovement.cs" />
     <Compile Include="Assets\Mario\Scripts\Exit.cs" />
     <Compile Include="Assets\Mario\Scripts\MarioGameManager.cs" />
-    <Compile Include="Assets\Mario\Scripts\MarioScoreManager.cs" />
+    <Compile Include="Assets\Mario\Scripts\MarioScoreCounter.cs" />
     <Compile Include="Assets\Mario\Scripts\Parallaxing.cs" />
     <Compile Include="Assets\Mario\Scripts\Tiling.cs" />
     <Compile Include="Assets\PacMan\PacManCharacter\Scripts\PacMan2DUserControl.cs" />
@@ -102,6 +96,7 @@
     <Compile Include="Assets\PacMan\Scripts\Managers\MusicManager.cs" />
     <Compile Include="Assets\PacMan\Scripts\Managers\ScoreManager.cs" />
     <Compile Include="Assets\PacMan\Scripts\Managers\TileManager.cs" />
+    <Compile Include="Assets\PacMan\Scripts\PacManScoreCounter.cs" />
     <Compile Include="Assets\PacMan\Scripts\Pacdot.cs" />
     <Compile Include="Assets\PacMan\Scripts\PlayerController.cs" />
     <Compile Include="Assets\PacMan\Scripts\Point.cs" />
@@ -114,10 +109,10 @@
     <Compile Include="Assets\Pong\PlayerControlsHorizontal.cs" />
     <Compile Include="Assets\Pong\PongGameManager.cs" />
     <Compile Include="Assets\RocketLeague\Levels.cs" />
-    <Compile Include="Assets\RocketLeague\RocketLeagueGameManager.cs" />
     <Compile Include="Assets\RocketLeague\jump.cs" />
     <Compile Include="Assets\RocketLeague\scripts\CollisionCube.cs" />
     <Compile Include="Assets\RocketLeague\scripts\CubeColor.cs" />
+    <Compile Include="Assets\RocketLeague\scripts\RocketLeagueScoreCounter.cs" />
     <Compile Include="Assets\RocketLeague\scripts\Score.cs" />
     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_BGScroller.cs" />
     <Compile Include="Assets\SpaceInvaders\Done\Done_Scripts\Done_DestroyByBoundary.cs" />

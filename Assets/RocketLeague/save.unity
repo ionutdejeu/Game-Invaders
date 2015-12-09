@@ -329,8 +329,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scores:
-  - SphereScore: 1
-    CubeScore: 1
+  - SphereScore: 10
+    CubeScore: 10
     GameName: Pac Man
     GameLevelName: 
     GameLevel: 1

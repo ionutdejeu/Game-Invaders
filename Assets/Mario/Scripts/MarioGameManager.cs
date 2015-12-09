@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MarioGameManager : MonoBehaviour {
 
+
+    private float scoreTransferTick; 
     
 	// Use this for initialization
 	void Start () {
@@ -11,7 +13,7 @@ public class MarioGameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    
 	}
 
 
@@ -25,8 +27,13 @@ public class MarioGameManager : MonoBehaviour {
         }
         if (this.gameObject.name == "EndGame")
         {
-            Application.LoadLevel(RocketLeagueGameManager.Manager.HomeGameLevel);
+            Application.LoadLevel(GlobalScoreManager.RocketLeagueGameLevel);
+        }
+        if (other.gameObject.tag == "Enemy")
+        {
+            GameObject.Destroy(other.gameObject, 1f);
         }
     }
 
+    
 }
