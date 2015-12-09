@@ -6,11 +6,14 @@ public class CollisionCube : MonoBehaviour {
 
     public bool esteCub;
     public bool esteSfera;
+    public RocketLeagueScoreCounter scoreCounter;
 
 	// Use this for initialization
 	void Start () {
 	
 	}
+    
+    
     void OnCollisionEnter(Collision theCollision)
     {
         if (theCollision.gameObject.name == "Car")
@@ -20,11 +23,11 @@ public class CollisionCube : MonoBehaviour {
            
             if (esteCub)
             {
-                RocketLeagueGameManager.Manager.AddScore(1, 0);
+               scoreCounter.AddScore(1, 0);
             }
             if (esteSfera)
             {
-                RocketLeagueGameManager.Manager.AddScore(0, 1);
+                scoreCounter.AddScore(0, 1);
             }
         }
         

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MarioScoreManager : MonoBehaviour {
+public class PacManScoreCounter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
