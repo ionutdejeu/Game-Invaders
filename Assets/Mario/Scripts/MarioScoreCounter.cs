@@ -29,5 +29,11 @@ public class MarioScoreCounter : MonoBehaviour {
         this.RefreshScore();
 
     }
-    
+
+    public void ReturnToMainGame()
+    {
+        nextGameManager.BeginTransition(NextGameManager.HomeScene);
+    }
+
+
 }
