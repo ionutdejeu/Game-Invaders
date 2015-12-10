@@ -7,6 +7,9 @@ public class MarioScoreCounter : MonoBehaviour {
     public Text scoreText;
     public NextGameManager nextGameManager;
 
+
+    public AudioSource coinPickupSound;
+    public AudioSource endGameSound;
 	// Use this for initialization
 	void Start () {
 	
@@ -27,13 +30,14 @@ public class MarioScoreCounter : MonoBehaviour {
         
         GlobalScoreManager.GScore.MarioCollectedCoins += pCoin;
         this.RefreshScore();
+        coinPickupSound.Play();
 
     }
 
     public void ReturnToMainGame()
     {
-        nextGameManager.BeginTransition(NextGameManager.HomeScene);
+        endGameSound.Play();   
+        nextGameManager.BeginTransition(NextGameManager.HomeScene,"Rocket league");
     }
-
 
 }
