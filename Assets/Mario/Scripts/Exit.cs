@@ -3,10 +3,12 @@ using System.Collections;
 
 public class Exit : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+    private MarioScoreCounter counter;
+    // Use this for initialization
+    void Start()
+    {
+        counter = GameObject.Find("_GM").GetComponent<MarioScoreCounter>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -14,14 +16,12 @@ public class Exit : MonoBehaviour {
 
     }
 
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter2D(Collider2D collider)
     {
         switch (collider.gameObject.name)
         {
-            case "Player":
-            CoinController.coinCount++;
-                Destroy(this.gameObject);
-
+            case "PacmanPrefab":
+                counter.ReturnToMainGame();
             break;
         }
 
