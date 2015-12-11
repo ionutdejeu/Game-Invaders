@@ -122,6 +122,6 @@ public class Game : MonoBehaviour {
 
     public void RestartGame()
     {
-        Application.LoadLevel("Level");
+       //Application.LoadLevel("Level");
     }
 }

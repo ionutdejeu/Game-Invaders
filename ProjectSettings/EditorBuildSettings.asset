@@ -8,6 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mario/Tutorial.unity
   - enabled: 1
-    path: Assets/Mario/Tutorial.unity
-  - enabled: 1
     path: Assets/RocketLeague/save.unity
+  - enabled: 1
+    path: Assets/Tetris/Scenes/Level.unity

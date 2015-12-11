@@ -16,6 +16,10 @@ public class RocketLeagueScoreCounter : MonoBehaviour {
 
     public NextGameManager nextGameManager;
 
+    void Start()
+    {
+        this.RefreshScore();
+    }
 
     public void RefreshScore()
     {
@@ -27,14 +31,19 @@ public class RocketLeagueScoreCounter : MonoBehaviour {
         GlobalScoreManager.GScore.RocketLeagueCubeScore+=pScoreCubes;
         GlobalScoreManager.GScore.RocketLeagueSphereScore+=pScoreSpheres;
         this.RefreshScore();
-
+        pickUpAudio.Play();
         // get the next level
         ScoreCheckoint ch = this.CheckNextLevel();
         
         if (ch!=null)
         {
+            // mark the next level as visited;
+            ch.isVisited = true;
+
+            endLevelAudio.Play();
             // begin the transition to the next level
-            nextGameManager.BeginTransition(ch.GameLevel);
+            nextGameManager.BeginTransition(ch.GameLevel,ch.GameLevelName);
+            
         }
 
     }
@@ -52,13 +61,21 @@ public class RocketLeagueScoreCounter : MonoBehaviour {
     }
 
     [SerializeField]
-    public List<ScoreCheckoint> scores = new List<ScoreCheckoint>()
+    public static List<ScoreCheckoint> scores = new List<ScoreCheckoint>()
     {
         new ScoreCheckoint(){
-            SphereScore  = 1,
-            CubeScore = 1, 
+            SphereScore  = 5,
+            CubeScore = 5, 
             GameName = "Mario",
-            GameLevel =1
+            GameLevel = 0,
+            isVisited = false
+        },
+        new ScoreCheckoint(){
+            SphereScore  = 10,
+            CubeScore = 10, 
+            GameName = "Mario",
+            GameLevel =1,
+            isVisited = false
         }
     };
 

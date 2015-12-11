@@ -261,6 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   esteCub: 1
   esteSfera: 0
+  scoreCounter: {fileID: 529339227}
 --- !u!114 &43715976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,9 +296,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 529339223}
-  - 114: {fileID: 529339224}
   - 82: {fileID: 529339225}
   - 82: {fileID: 529339226}
+  - 114: {fileID: 529339224}
+  - 114: {fileID: 529339227}
   m_Layer: 0
   m_Name: _GM
   m_TagString: _GM
@@ -325,28 +327,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 529339222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f220a5d9eb236c942874018d56b1b43f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e0487b58fdbbaa45bb007c8677d842a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scores:
-  - SphereScore: 10
-    CubeScore: 10
-    GameName: Pac Man
-    GameLevelName: 
-    GameLevel: 1
-    isVisited: 0
-  HomeGameLevel: 2
-  ScoreCubes: 2
-  ScoreSpheres: 2
-  CurrentState: 0
-  PreviousState: 0
+  CurrentState: 1
   NextGameUI: {fileID: 1157791357}
   NextGameSecondsCountdown: {fileID: 1909868089}
   NextGameTitle: {fileID: 1974217780}
-  textScoreCubes: {fileID: 2083857379}
-  textScoreSpheres: {fileID: 39158383}
-  pickUpAudio: {fileID: 529339225}
-  endLevelAudio: {fileID: 529339226}
 --- !u!82 &529339225
 AudioSource:
   m_ObjectHideFlags: 0
@@ -487,6 +474,29 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &529339227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 529339222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff7283c6e5a93747a77e43bf3f64222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpAudio: {fileID: 529339225}
+  endLevelAudio: {fileID: 529339226}
+  textScoreCubes: {fileID: 2083857379}
+  textScoreSpheres: {fileID: 39158383}
+  nextGameManager: {fileID: 529339224}
+  scores:
+  - SphereScore: 5
+    CubeScore: 5
+    GameName: Mario
+    GameLevelName: 
+    GameLevel: 1
+    isVisited: 0
 --- !u!1 &1157791357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,6 +1283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   esteCub: 0
   esteSfera: 1
+  scoreCounter: {fileID: 529339227}
 --- !u!114 &2065976133
 MonoBehaviour:
   m_ObjectHideFlags: 0
