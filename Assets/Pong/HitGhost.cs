@@ -5,9 +5,12 @@ public class HitGhost : MonoBehaviour
 {
     public static int TotalNumberOfGhosts = 8;
     // Use this for initialization
+    private NextGameManager gameManager;
     void Start()
     {
         TotalNumberOfGhosts = 8;
+        gameManager = GameObject.Find("_GM").GetComponent<NextGameManager>();
+        
     }
 
     // Update is called once per frame
@@ -23,9 +26,8 @@ public class HitGhost : MonoBehaviour
             TotalNumberOfGhosts = TotalNumberOfGhosts - 1;
             if(TotalNumberOfGhosts <= 0)
             {
-                Application.LoadLevel(0);
+                gameManager.BeginTransition(0, "Rocket league");
             }
-            Debug.Log("Collider");
             GameObject.Destroy(this.gameObject);
         }
         
