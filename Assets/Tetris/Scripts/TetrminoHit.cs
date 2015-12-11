@@ -13,6 +13,9 @@ public class TetrminoHit : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Application.LoadLevel("Level");
+        if (collider.gameObject.tag == "Tetramino")
+        {
+            Application.LoadLevel("Level");
+        }
     }
 }

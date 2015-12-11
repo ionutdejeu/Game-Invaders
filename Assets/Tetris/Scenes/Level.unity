@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135d6ee157d32ea468c8d46d5295981b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreText: {fileID: 1323225832}
+  ScoreText: {fileID: 0}
   tetralinoRotateSound: {fileID: 592084770}
   marioJumpSound: {fileID: 592084769}
   endGameSound: {fileID: 592084768}
@@ -960,11 +960,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490410, guid: 0cfc469629735ea49a94ae519242ba59, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.76999998
+      value: .180000007
       objectReference: {fileID: 0}
     - target: {fileID: 490410, guid: 0cfc469629735ea49a94ae519242ba59, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7.26999998
+      value: .00999999978
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11477544, guid: 0cfc469629735ea49a94ae519242ba59, type: 2}
@@ -1084,7 +1084,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
