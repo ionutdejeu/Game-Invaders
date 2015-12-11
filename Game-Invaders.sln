@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game-Invaders.CSharp.Plugins", "Game-Invaders.CSharp.Plugins.csproj", "{6EE501A8-F5A9-CF81-9CC8-3F749F6BB3CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game-Invaders.CSharp", "Game-Invaders.CSharp.csproj", "{063862ED-B67D-B03F-CF4E-2AA00D2D1F17}"

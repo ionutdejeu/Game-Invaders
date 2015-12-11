@@ -65,25 +65,32 @@ public class RocketLeagueScoreCounter : MonoBehaviour {
     {
         new ScoreCheckoint(){
             SphereScore  = 2,
-            CubeScore = 2, 
+            CubeScore = 2,
             GameLevelName = "Tetris",
             GameLevel = 2,
             isVisited = false
         },
         new ScoreCheckoint(){
             SphereScore  = 5,
-            CubeScore = 5, 
+            CubeScore = 5,
             GameLevelName = "Mario",
             GameLevel =0,
             isVisited = false
         },
         new ScoreCheckoint(){
             SphereScore  = 7,
-            CubeScore = 7, 
+            CubeScore = 7,
             GameLevelName = "Pong",
             GameLevel = 3,
             isVisited = false
-        }
+        },
+        new ScoreCheckoint(){
+            SphereScore  = 9,
+            CubeScore = 9,
+            GameLevelName = "Space invaders",
+            GameLevel = 4,
+            isVisited = false
+        },
     };
 
     public ScoreCheckoint CheckNextLevel()

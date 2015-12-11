@@ -12,7 +12,7 @@ public class DestroyByContact : MonoBehaviour
     public int startingHealth = 100;
     public int currentHealth;
     public Slider healthSlider;
-    public Image damageImage;
+    
 
 
     void Start()
@@ -35,15 +35,24 @@ public class DestroyByContact : MonoBehaviour
         {
             return;
         }
-        Instantiate(explosion, transform.position, transform.rotation);
+        GameObject naveExpl = Instantiate(explosion, transform.position, transform.rotation) as GameObject;
+        GameObject.Destroy(naveExpl.gameObject, 1f);
         if (other.tag == "Player")
         {
-            Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
+            GameObject playerExpl = Instantiate(playerExplosion, other.transform.position, other.transform.rotation) as GameObject;
+            GameObject.Destroy(playerExpl, 1f);
             gameController.GameOver();
         }
         gameController.AddScore (scoreValue);
         // Destroy(other.gameObject);   
-
+        if(other.gameObject.tag == "wall")
+        {
+           
+            // aici nava/obiectu se loveste de perete 
+            HealthWall viataPere= other.gameObject.GetComponent<HealthWall>();
+            // scazi viata din perete 
+            viataPere.TakeDamage(10);
+        }
       
         Destroy(gameObject);
     }
