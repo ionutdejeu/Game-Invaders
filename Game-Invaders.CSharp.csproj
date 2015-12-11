@@ -76,10 +76,13 @@
   <ItemGroup>
     <Compile Include="Assets\Mario\GumbaCharacter\GumbaController.cs" />
     <Compile Include="Assets\Mario\GumbaCharacter\GumbaMovement.cs" />
+    <Compile Include="Assets\Mario\Scripts\CoinController.cs" />
     <Compile Include="Assets\Mario\Scripts\Exit.cs" />
+    <Compile Include="Assets\Mario\Scripts\MarioCollectCoin.cs" />
     <Compile Include="Assets\Mario\Scripts\MarioGameManager.cs" />
     <Compile Include="Assets\Mario\Scripts\MarioScoreCounter.cs" />
     <Compile Include="Assets\Mario\Scripts\Parallaxing.cs" />
+    <Compile Include="Assets\Mario\Scripts\ScoreScript.cs" />
     <Compile Include="Assets\Mario\Scripts\Tiling.cs" />
     <Compile Include="Assets\PacMan\PacManCharacter\Scripts\PacMan2DUserControl.cs" />
     <Compile Include="Assets\PacMan\PacManCharacter\Scripts\PacManCharacter2D.cs" />
@@ -107,7 +110,6 @@
     <Compile Include="Assets\Pong\PacBall.cs" />
     <Compile Include="Assets\Pong\PlayerControls.cs" />
     <Compile Include="Assets\Pong\PlayerControlsHorizontal.cs" />
-    <Compile Include="Assets\Pong\PongGameManager.cs" />
     <Compile Include="Assets\RocketLeague\Levels.cs" />
     <Compile Include="Assets\RocketLeague\jump.cs" />
     <Compile Include="Assets\RocketLeague\scripts\CollisionCube.cs" />
@@ -135,6 +137,7 @@
     <Compile Include="Assets\Tetris\Scripts\MarioMovement.cs" />
     <Compile Include="Assets\Tetris\Scripts\MenuScript.cs" />
     <Compile Include="Assets\Tetris\Scripts\Tetramino.cs" />
+    <Compile Include="Assets\Tetris\Scripts\TetrisScoreCounter.cs" />
     <Compile Include="Assets\Tetris\Scripts\TetrminoHit.cs" />
   </ItemGroup>
   <ItemGroup>

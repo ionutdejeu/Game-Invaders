@@ -9,8 +9,10 @@ public class Tetramino : MonoBehaviour {
     public bool allowRotation = true;
     public bool limitRotation = false;
 
-    void Start() {
+    private TetrisScoreCounter counter;
 
+    void Start() {
+        counter = GameObject.Find("_GM").GetComponent<TetrisScoreCounter>();
     }
 
     void Update() {
@@ -31,6 +33,7 @@ public class Tetramino : MonoBehaviour {
             {
                 transform.position += new Vector3(-1, 0, 0);
             }
+            counter.PlayRotateSound();
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -44,6 +47,7 @@ public class Tetramino : MonoBehaviour {
             {
                 transform.position += new Vector3(1, 0, 0);
             }
+            counter.PlayRotateSound();
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -86,6 +90,7 @@ public class Tetramino : MonoBehaviour {
                         transform.Rotate(0, 0, -90);
                     }
                 }
+                counter.PlayRotateSound();
             }
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Time.time - fall >= fallSpeed)
@@ -108,6 +113,7 @@ public class Tetramino : MonoBehaviour {
             }
 
             fall = Time.time;
+            counter.PlayRotateSound();
         }
     }
 

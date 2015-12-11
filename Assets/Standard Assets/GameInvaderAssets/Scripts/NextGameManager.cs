@@ -13,18 +13,16 @@ public class NextGameManager : MonoBehaviour {
     public Text NextGameSecondsCountdown;
     public Text NextGameTitle;
    
-    // privates
+    // privates     
     private float nextTimeForCountdowAnimation;
     private int levelToLoad;
 
    
-    public static int HomeScene = 2;            // This is the scene where the app should return
+    public static int HomeScene = 1;            // This is the scene where the app should return
 
 	// Use this for initialization
 	void Start () {
         NextGameUI.SetActive(false);
-        // U = User 
-        // I = Interface
         CurrentState = GameState.Waiting;
 	}
 	
@@ -49,9 +47,9 @@ public class NextGameManager : MonoBehaviour {
     /// This function gegins the transition to the next game level
     /// </summary>
     /// <param name="LevelToLoad">the ID of the scene to load as next level</param>
-    public void BeginTransition(int pLevelToLoad, string nextLevelName="")
+    public void BeginTransition(int pLevelToLoad,string pNextGameName="")
     {
-        NextGameTitle.text = nextLevelName;
+        NextGameTitle.text = pNextGameName;
         NextGameUI.SetActive(true);
         levelToLoad = pLevelToLoad;
         nextTimeForCountdowAnimation = 4f;

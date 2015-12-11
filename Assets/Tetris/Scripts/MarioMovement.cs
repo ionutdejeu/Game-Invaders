@@ -8,6 +8,7 @@ public class MarioMovement : MonoBehaviour {
 
     private PlatformerCharacter2D character;
     private bool jump;
+    public TetrisScoreCounter scoreCounter;
 
     private void Awake()
     {
@@ -17,8 +18,14 @@ public class MarioMovement : MonoBehaviour {
     private void Update()
     {
         if (!jump)
+        {
             // Read the jump input in Update so button presses aren't missed.
             jump = CrossPlatformInputManager.GetButtonDown("Jump");
+            if (jump)
+            {
+                scoreCounter.PlayJumpSound();
+            }
+        }
     }
 
     private void FixedUpdate()
